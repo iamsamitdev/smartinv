@@ -1,0 +1,8 @@
+ProductID,CategoryID,ProductName,UnitPrice,UnitInStock
+1,1,iPhone 12 Pro Max,45000,2
+2,2,iPad Pro 2021,18500,10
+3,4,Macbook Pro M1,45000,10
+4,3,Airpods Pro,12500,5
+5,1,Heawei P 20 Pro,18500,10
+9,4,Lenovo Idea Pad,30000,20
+10,5,Huawei Watch GT,6900,8

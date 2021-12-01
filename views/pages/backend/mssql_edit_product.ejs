@@ -1,8 +1,8 @@
 <div class="container-fluid">
     <!-- Page Heading -->
-    <div class="d-sm-flex align-items-center justify-content-between mb-5">
-        <h1 class="h3 mb-0 text-gray-800"><%- heading %></h1>
-        <a href="/backend/mssqlproducts" class="d-none d-sm-inline-block btn btn-warning shadow-sm"><i class="fas fa-arrow-left fa-sm text-white-50"></i> Back</a>
+    <div class="mb-5 d-sm-flex align-items-center justify-content-between">
+        <h1 class="mb-0 text-gray-800 h3"><%- heading %></h1>
+        <a href="/backend/mssqlproducts" class="shadow-sm d-none d-sm-inline-block btn btn-warning"><i class="fas fa-arrow-left fa-sm text-white-50"></i> Back</a>
     </div>
 
     <!-- Content Row -->
@@ -32,8 +32,9 @@
                             <select name="CategoryID" id="CategoryID" class="form-control">
                                 <option value="1" <% if(data[0].CategoryID == 1){%> selected <%}%>>Mobile</option>
                                 <option value="2" <% if(data[0].CategoryID == 2){%> selected <%}%>>Tablet</option>
-                                <option value="3"<% if(data[0].CategoryID == 3){%> selected <%}%>>Smart Watch</option>
+                                <option value="3"<% if(data[0].CategoryID == 3){%> selected <%}%>>Head Phone</option>
                                 <option value="4"<% if(data[0].CategoryID == 4){%> selected <%}%>>Labtop</option>
+                                <option value="5"<% if(data[0].CategoryID == 5){%> selected <%}%>>Smart Watch</option>
                             </select>
                         </div>
                     </div>
@@ -59,7 +60,7 @@
                     <div class="form-group row">
                         <label for="inputName" class="col-md-4 col-form-label">&nbsp;</label>
                         <div class="col-md-8">
-                            <input type="submit" class="btn btn-success" value="Add"/>
+                            <input type="submit" class="btn btn-warning" value="Update"/>
                         </div>
                     </div>
                 </form>

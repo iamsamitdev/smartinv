@@ -40,7 +40,7 @@ const formatPrice = (value) => {
 }
 
 // กำหนดตัวแปรเก็บหมวดหมู่สินค้า
-const category = ["","Mobile","Tablet","Smart Watch","Labtop"]
+const category = ["","Mobile","Tablet","Head Phone","Labtop","Smart Watch"]
 
 router.get('',(req, res)=>{
     res.render(
@@ -69,7 +69,8 @@ router.get('/mysqlproducts',(req, res)=>{
                     layout: './layouts/backend',
                     data: rows,
                     moment: moment,
-                    formatPrice: formatPrice
+                    formatPrice: formatPrice,
+                    category: category
                 }
             )
         }
